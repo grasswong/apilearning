@@ -1,0 +1,38 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokemon{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 5px;
+    padding:50px;
+    background-color: wheat;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+.stats{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 5px;
+    padding:50px;
+    background-color:beige;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+.contents{
+    display: flex;
+    background-image: url('https://wallpapercave.com/wp/BQYb4Cl.jpg');
+    padding:20px;
+}
+#pokeName{
+    margin:10px;
+    padding:5px;
+}
+#btnPoke{
+    margin:10px;
+}

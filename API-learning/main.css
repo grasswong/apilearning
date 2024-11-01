@@ -1,0 +1,133 @@
+:root{
+    --themeBlue:#96e3ff;
+    --themeDarkBlue:#2169d6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.card{
+    border:1px solid #000000;
+    border-radius:20px;
+    box-shadow: 7px 7px 7px #00000013;
+    padding:20px;
+    text-align: center;
+    max-width: 250px;
+    display:block;
+    background-color: rgb(99, 229, 255);
+    
+}
+
+.card:hover{
+    box-shadow: 12px 12px 12px #00000013;
+    background-color: rgb(141, 236, 255);
+}
+
+.card_img{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card .card_title{
+    font-family:Arial, sans-serif;
+    margin:0;
+    color:white;
+}
+
+.card .card_text{
+    font-family: Arial, sans-serif;
+    color: hsla(0, 0%, 30%);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: white;
+    padding:0px;
+    margin:0;
+}
+.menu-btn{
+    transition: transform 0.3s;
+    border-radius: 40px;
+    padding:8px;
+    border:none;
+    background:linear-gradient(to right, #358ad4, #0445a5); 
+    min-width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.menu-btn:hover{
+    transform:translateY(-5px);
+    cursor:pointer;
+}
+
+@keyframes slideToRight {
+    from{
+        transform:translateY(20%);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+.slideToRight{
+    animation:slideToRight 1s ease-in;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.items{
+    display:flex;
+    justify-content:space-between;
+    opacity:0;
+    filter:blur(3px);
+    transform:translateY(20%);
+    transition:all 1s;
+    padding: 35px 150px 35px 150px;
+    margin:0px;
+}
+.show{
+    animation-range:entry 100%;
+    opacity:1;
+    filter:blur(0);
+    transform:translateY(0);
+}
+.header-menu{   
+    display:flex;
+    justify-content: flex-end;
+    padding:30px;
+    margin:0;
+}
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    list-style:none;
+    color:rgb(0, 0, 0);
+    margin-left: 20px;
+    transition: transform 0.3s;
+}
+.menu:hover{
+    transform:translateY(-3px);
+    cursor:pointer;
+    color:var(--themeBlue);
+}
+.works{ 
+    margin:0;
+    background-color: var(--themeBlue);
+    display:flex;
+    flex-direction: column;
+}
+.description{
+    font-family: serif;
+    font-weight:1000;
+    display:flex;
+    justify-content:space-between;
+}
+.texts{
+    padding:40px;
+    font-size: larger;
+}
